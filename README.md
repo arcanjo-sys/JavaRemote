@@ -445,7 +445,7 @@ Planned development areas include:
 
 ### Remote Screen Capture
 
-A future version of JavaRemote is planned to integrate with **ArcImage**, a separate project focused on screen image capture.
+A future version of JavaRemote is planned to be integrated into **ArcImage**, a separate project focused on significantly compressing an image file..
 
 The intended architecture is:
 
