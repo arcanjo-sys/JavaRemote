@@ -67,7 +67,7 @@ public class RemoteClient implements AutoCloseable {
         }
 
         writer.println(command);
-        return reader.readLine();
+        return receiveMessage();
     }
 
     /**
@@ -77,7 +77,9 @@ public class RemoteClient implements AutoCloseable {
         if (!connected || writer == null) {
             throw new IOException("Client is not connected to a server.");
         }
-        writer.println(message);
+        writer.write(message);
+        writer.write("<END>");
+        writer.flush();
     }
 
     /**
@@ -87,7 +89,19 @@ public class RemoteClient implements AutoCloseable {
         if (!connected || reader == null) {
             throw new IOException("Client is not connected to a server.");
         }
-        return reader.readLine();
+
+        StringBuilder response = new StringBuilder();
+        String line;
+
+        while ((line = reader.readLine()) != null) {
+            if (line.equals("<END>")) {
+                break;
+            }
+
+            response.append(line).append(System.lineSeparator());
+        }
+
+        return response.toString();
     }
 
     /**

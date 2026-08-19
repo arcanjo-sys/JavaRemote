@@ -48,7 +48,17 @@ public class ConnectionHandler implements Runnable {
                 }
 
                 String response = commandRegistry.processInput(input);
-                writer.println(response);
+
+                if (response != null) {
+                    writer.print(response);
+
+                    if (!response.endsWith("\n")) {
+                        writer.println();
+                    }
+                }
+
+                writer.println("<END>");
+                writer.flush();
             }
         } catch (IOException e) {
             System.err.println("[-] Communication error with client " + clientAddress + ": " + e.getMessage());
