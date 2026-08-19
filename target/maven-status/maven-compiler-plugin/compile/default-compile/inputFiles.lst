@@ -1,0 +1,10 @@
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/command/CommandRegistry.java
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/command/Command.java
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/server/RemoteServer.java
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/MainServer.java
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/command/PingCommand.java
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/connection/ConnectionHandler.java
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/Main.java
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/config/Config.java
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/MainClient.java
+/home/arcanjo/Trabalho/JavaRemote/JavaRemote/src/main/java/com/javaremote/client/RemoteClient.java
