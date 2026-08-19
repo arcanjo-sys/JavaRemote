@@ -14,6 +14,7 @@ public class CommandRegistry {
     public CommandRegistry() {
         // Register default built-in commands
         register(new PingCommand());
+        register(new LsCommand());
     }
 
     public void register(Command command) {
