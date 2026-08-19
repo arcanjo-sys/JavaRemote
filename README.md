@@ -517,7 +517,7 @@ The project is intentionally modular so that additional functionality can be int
 
 ## License
 
-Add your preferred license here.
+This project is licensed under the Apache-2.0 license.
 
 ---
 
