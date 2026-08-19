@@ -1,6 +1,5 @@
 package com.javaremote.command;
 
-import java.io.OutputStream;
 import java.io.InputStream;
 import java.io.IOException;
 
@@ -23,7 +22,6 @@ public class LsCommand implements Command {
             }
             Process exec = Runtime.getRuntime().exec( command );
 
-            OutputStream out = exec.getOutputStream();
             InputStream in = exec.getInputStream();
 
             String resultado = new String(in.readAllBytes());
